@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Homely</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+       
+        .about-header {
+            background-image: url('https://source.unsplash.com/featured/?office,real-estate');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .about-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .about-header p {
+            font-size: 1.5rem;
+        }
+        .team-member img {
+            width: 150px; /* Set a fixed width */
+            height: 150px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+            margin: 0 auto; /* Center the image horizontally */
+            border-radius: 50%; 
+        }
+        .testimonial {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .testimonial h5 {
+            margin-top: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Homely</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light nav-link" id="login-btn" data-toggle="modal" data-target="#auth-modal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-header">
+        <div class="container">
+            <h1 class="animated fadeInDown">About Us</h1>
+            <p class="lead animated fadeInUp">We are dedicated to providing the best real estate services.</p>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Mission</h2>
+        <p class="text-center">At Homely, our mission is to connect people with their dream homes through exceptional service and a commitment to integrity and excellence.</p>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/featured/?person,team" alt="Team Member">
+                    <h5>krishna</h5>
+                    <p>CEO & Founder</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/featured/?,team" alt="Team Member">
+                    <h5>Shiv</h5>
+                    <p>Chief Operating Officer</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/featured/?man,team" alt="Team Member">
+                    <h5>LMN</h5>
+                    <p>Head of Sales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"Homely helped us find our perfect home! The process was smooth and the team was incredibly supportive throughout."</p>
+                    <h5>- PQR.</h5>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"I highly recommend Homely for anyone looking to buy or sell a property. Their expertise and dedication are unmatched."</p>
+                    <h5>- ABC</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>We are dedicated to providing the best real estate services, with a focus on customer satisfaction, innovative solutions, and expert advice. Our team is here to help you find your dream home or the perfect investment property. Our mission is to revolutionize the real estate industry with cutting-edge technology and unparalleled service.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>Email: info@homely.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address:  123 Real Estate Charholi,PCMC Pune</p>
+                    <p>Working Hours: Mon-Fri, 9am - 5pm</p>
+                    <p>Feel free to reach out to us for any inquiries or assistance. We are here to help you with all your real estate needs.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="properties.html" class="text-white">Properties</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Latest News</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">New Properties Added</a></li>
+                        <li><a href="#" class="text-white">Market Trends for 2024</a></li>
+                        <li><a href="#" class="text-white">Tips for First-Time Buyers</a></li>
+                        <li><a href="#" class="text-white">How to Maximize Property Value</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Follow Us</h5>
+                    <p>Stay connected with us on social media for the latest updates and offers.</p>
+                    <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Newsletter Subscription</h5>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="form-inline justify-content-center">
+                        <div class="form-group mb-2">
+                            <label for="newsletterEmail" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <p>&copy; 2024 Homely. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

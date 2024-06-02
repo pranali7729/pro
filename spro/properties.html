@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Homely</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .properties-header {
+            background-image: url('https://source.unsplash.com/featured/?real-estate');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .properties-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .properties-header p {
+            font-size: 1.5rem;
+        }
+        .property-card {
+            margin-bottom: 30px;
+        }
+        .property-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-card .card-body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Homely</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light nav-link" id="login-btn" data-toggle="modal" data-target="#auth-modal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="properties-header">
+        <div class="container">
+            <h1 class="animated fadeInDown">Our Properties</h1>
+            <p class="lead animated fadeInUp">Explore our latest properties available for sale and rent</p>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4 property-card">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?luxury-home" alt="Luxury Home">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Penthouse</h5>
+                        <p class="card-text">Experience the height of luxury in this stunning penthouse located in the city center. Price: $2,500,000</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 property-card">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?modern-apartment" alt="Modern Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Apartment</h5>
+                        <p class="card-text">A sleek and modern apartment in a prime location, perfect for urban living. Price: $800,000</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 property-card">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?cozy-cottage" alt="Cozy Cottage">
+                    <div class="card-body">
+                        <h5 class="card-title">Cozy Cottage</h5>
+                        <p class="card-text">A charming cottage with a beautiful garden, ideal for a peaceful retreat. Price: $350,000</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 property-card">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?suburban-house" alt="Suburban House">
+                    <div class="card-body">
+                        <h5 class="card-title">Suburban House</h5>
+                        <p class="card-text">A spacious house in a quiet suburb, perfect for families. Price: $600,000</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 property-card">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?beachfront-villa" alt="Beachfront Villa">
+                    <div class="card-body">
+                        <h5 class="card-title">Beachfront Villa</h5>
+                        <p class="card-text">A luxurious villa with stunning ocean views and private beach access. Price: $3,000,000</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 property-card">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?mountain-cabin" alt="Mountain Cabin">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain Cabin</h5>
+                        <p class="card-text">A rustic cabin in the mountains, perfect for nature lovers. Price: $450,000</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>We are dedicated to providing the best real estate services, with a focus on customer satisfaction, innovative solutions, and expert advice. Our team is here to help you find your dream home or the perfect investment property. Our mission is to revolutionize the real estate industry with cutting-edge technology and unparalleled service.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>Email: info@homely.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address:  123 Real Estate Charholi,PCMC Pune</p>
+                    <p>Working Hours: Mon-Fri, 9am - 5pm</p>
+                    <p>Feel free to reach out to us for any inquiries or assistance. We are here to help you with all your real estate needs.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="properties.html" class="text-white">Properties</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Latest News</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">New Properties Added</a></li>
+                        <li><a href="#" class="text-white">Market Trends for 2024</a></li>
+                        <li><a href="#" class="text-white">Tips for First-Time Buyers</a></li>
+                        <li><a href="#" class="text-white">How to Maximize Property Value</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Follow Us</h5>
+                    <p>Stay connected with us on social media for the latest updates and offers.</p>
+                    <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Newsletter Subscription</h5>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="form-inline justify-content-center">
+                        <div class="form-group mb-2">
+                            <label for="newsletterEmail" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <p>&copy; 2024 Homely. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

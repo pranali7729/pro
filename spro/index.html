@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homely - Real Estate</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .header-bg {
+            background-image: url('https://source.unsplash.com/featured/?row house&w=250&h=380');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Ensure the text is readable on the background image */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Homely</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light nav-link" id="login-btn" data-toggle="modal" data-target="#auth-modal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class=" text-center py-5 header-bg">
+        <div class="container">
+            <h1 class="display-4 animated fadeInDown">Find a house with the best quality and price here!</h1>
+            <p class="lead animated fadeInUp">Discover 20,000+ property options that are personalized just for you.</p>
+            <button class="btn btn-light animate__animated animate__bounce animate__delay-1s">Get Started</button>
+        </div>
+    </header>
+    <!-- <header class="header-bg text-white text-center py-5">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Find a house with the best quality and price here!</h1>
+            <p class="lead animate__animated animate__fadeInUp">Discover 20,000+ property options that are personalized just for you.</p>
+            <button class="btn btn-light animate__animated animate__bounce animate__delay-1s">Get Started</button>
+        </div>
+    </header> -->
+    
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Featured properties just for you</h2>
+        <div class="row">
+            <!-- Repeat this block for multiple properties -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-50 shadow-sm">
+                    <img src="https://source.unsplash.com/featured/?balcony&w=250&h=380
+                    " class="card-img-top" alt="Property Image">
+                    <div class="card-body">
+                        <h5 class="card-title">$1,234,956</h5>
+                        <p class="card-text">Beautiful 3 bedroom house in a serene environment.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more property blocks as needed -->
+            <!-- <div class="col-md=3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://source.unsplash.com/featured/?tree&w=250&h=380" class="card-img-top" alt="Property Image">
+                    <div class="card-body">
+                        <h5 class="card-title">$899,956</h5>
+                        <p class="card-text">Modern apartment in the city center.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://source.unsplash.com/featured/?building&w=250&h=380" class="card-img-top" alt="Property Image">
+                    <div class="card-body">
+                        <h5 class="card-title">$2,469,656</h5>
+                        <p class="card-text">Luxury villa with a private pool.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://source.unsplash.com/featured/?hotel&w=250&h=380" class="card-img-top" alt="Property Image">
+                    <div class="card-body">
+                        <h5 class="card-title">$2,469,656</h5>
+                        <p class="card-text">Luxury villa with a private pool.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://source.unsplash.com/featured/?home&w=250&h=380" class="card-img-top" alt="Property Image">
+                    <div class="card-body">
+                        <h5 class="card-title">$1,710,956</h5>
+                        <p class="card-text">Spacious family home in a quiet suburb.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Powerful features that best bring your team together to life</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://source.unsplash.com/featured/?Bungalow&w=500&h=300" class="img-fluid rounded shadow-sm" alt="Feature Image">
+                </div>
+                <div class="col-md-6">
+                    <p id="feature-text" class="animated fadeIn">Concierge helps you and your house sell faster and better for more money by creating the most of home improvement services.Concierge helps you and your house sell faster and better for more money by creating the most of home improvement services.
+
+                        Concierge helps you and your house sell faster and better for more money by creating the most of home improvement services.
+
+                    </p>
+                    <button id="learn-more-btn" class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Find the neighborhood for you</h2>
+        <div class="row">
+            <!-- Repeat this block for multiple neighborhoods -->
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-primary btn-block">Downtown</button>
+            </div>
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-primary btn-block">Suburbs</button>
+            </div>
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-primary btn-block">Countryside</button>
+            </div>
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-primary btn-block">Beachfront</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>We are dedicated to providing the best real estate services, with a focus on customer satisfaction. Our team is here to help you find your dream home or the perfect investment property. Our mission is to revolutionize the real estate industry with cutting-edge technology and unparalleled service.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>Email: info@homely.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address:  123 Real Estate Charholi,PCMC Pune</p>
+                    <p>Working Hours: Mon-Fri, 9am - 5pm</p>
+                    <p>Feel free to reach out to us for any inquiries or assistance. We are here to help you with all your real estate needs.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="properties.html" class="text-white">Properties</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Latest News</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">New Properties Added</a></li>
+                        <li><a href="#" class="text-white">Market Trends for 2024</a></li>
+                        <li><a href="#" class="text-white">Tips for First-Time Buyers</a></li>
+                        <li><a href="#" class="text-white">How to Maximize Property Value</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Follow Us</h5>
+                    <p>Stay connected with us on social media for the latest updates and offers.</p>
+                    <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Newsletter Subscription</h5>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="form-inline justify-content-center">
+                        <div class="form-group mb-2">
+                            <label for="newsletterEmail" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <p>&copy; 2024 Homely. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Authentication Modal -->
+    <div class="modal fade" id="auth-modal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Login / Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Login Form -->
+                    <div id="login-form">
+                        <h5>Login</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="login-email">Email address</label>
+                                <input type="email" class="form-control" id="login-email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Password</label>
+                                <input type="password" class="form-control" id="login-password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                        <p class="mt-3">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                    </div>
+
+                    <!-- Sign Up Form -->
+                    <div id="signup-form" style="display: none;">
+                        <h5>Sign Up</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="signup-email">Enter Your Email address</label>
+                                <input type="email" class="form-control" id="signup-email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-password">Enter Your Password</label>
+                                <input type="password" class="form-control" id="signup-password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-passwordc">Confirm Your Password</label>
+                                <input type="passwordc" class="form-control" id="signup-passwordc" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-password">Enter Your Age</label>
+                                <input type="date" class="form-control" id="signup-date" placeholder="Date">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </form>
+                        <p class="mt-3">Already have an account? <a href="#" id="show-login">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var learnMoreBtn = document.getElementById('learn-more-btn');
+            var featureText = document.getElementById('feature-text');
+
+            learnMoreBtn.addEventListener('click', function() {
+                if (featureText.style.display === 'none' || featureText.style.display === '') {
+                    featureText.style.display = 'block';
+                    learnMoreBtn.textContent = 'Show Less';
+                } else {
+                    featureText.style.display = 'none';
+                    learnMoreBtn.textContent = 'Learn More';
+                }
+            });
+
+            var loginForm = document.getElementById('login-form');
+            var signupForm = document.getElementById('signup-form');
+            var showSignup = document.getElementById('show-signup');
+            var showLogin = document.getElementById('show-login');
+
+            showSignup.addEventListener('click', function(event) {
+                event.preventDefault();
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+            });
+
+            showLogin.addEventListener('click', function(event) {
+                event.preventDefault();
+                signupForm.style.display = 'none';
+                loginForm.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
